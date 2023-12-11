@@ -1,0 +1,24 @@
+﻿<Page x:Class="CRUD.DepartmentsWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:local="clr-namespace:CRUD"
+      mc:Ignorable="d">
+    <Grid>
+        <DataGrid x:Name="departmentDataGrid" HorizontalAlignment="Left" Margin="317,10,0,0" VerticalAlignment="Top" Height="299" Width="520" SelectionChanged="departmentDataGrid_SelectionChanged"/>
+        <Label x:Name="label" Content="DEPARTMENT_ID" HorizontalAlignment="Left" Margin="34,54,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="DEPARTMENT_NAME" HorizontalAlignment="Left" Margin="34,89,0,0" VerticalAlignment="Top"/>
+        <!-- Add more labels as needed -->
+
+        <TextBox x:Name="department_id_txtbx" HorizontalAlignment="Left" Height="23" Margin="145,54,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="department_name_txtbx" HorizontalAlignment="Left" Height="24" Margin="145,89,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <!-- Add more textboxes as needed -->
+
+        <GroupBox x:Name="groupBox" Header="Departments Information" HorizontalAlignment="Left" Margin="22,28,0,0" VerticalAlignment="Top" Height="218" Width="256"/>
+        <Button x:Name="addDepartmentBtn" Content="Add" HorizontalAlignment="Left" Margin="16,263,0,0" VerticalAlignment="Top" Width="75" Click="addDepartmentBtn_Click"/>
+        <Button x:Name="updateDepartmentBtn" Content="Update" HorizontalAlignment="Left" Margin="109,263,0,0" VerticalAlignment="Top" Width="75" Click="updateDepartmentBtn_Click" IsEnabled="False"/>
+        <Button x:Name="deleteDepartmentBtn" Content="Delete" HorizontalAlignment="Left" Margin="208,263,0,0" VerticalAlignment="Top" Width="76" Click="deleteDepartmentBtn_Click" IsEnabled="False"/>
+        <Button x:Name="resetDepartmentBtn" Content="Reset" HorizontalAlignment="Left" Margin="109,294,0,0" VerticalAlignment="Top" Width="75" Click="resetDepartmentBtn_Click"/>
+    </Grid>
+</Page>

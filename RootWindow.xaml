@@ -1,0 +1,19 @@
+﻿<Window x:Class="CRUD.RootWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRUD"
+        mc:Ignorable="d"
+        Title="Root Window" Height="500" Width="951">
+    <Grid>
+        <TabControl x:Name="tabControl">
+            <TabItem Header="Employees">
+                <Frame x:Name="employeeFrame" NavigationUIVisibility="Hidden"/>
+            </TabItem>
+            <TabItem Header="Departments">
+                <Frame x:Name="departmentFrame" NavigationUIVisibility="Hidden"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
